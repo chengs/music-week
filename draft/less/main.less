@@ -1,0 +1,45 @@
+@import-once "css3";
+//global
+@main_width:1000px;
+@header_height:164px;
+@footer_height:264px;
+body{
+  background-color: #000;
+  background-image: url(../img/body_bg.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.center1000{
+  width:@main_width;
+  margin: 0 auto;
+}
+
+//individual
+header{
+  height: @header_height;
+  .center1000;
+  background: url(../img/header_bg.png) no-repeat 50% 50%;
+}
+
+nav#topNav{
+  height:55px;
+  background: url(../img/topnav_bg.png) repeat-x;
+  .container{
+    .center1000;
+    height: 54px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+div#container{
+  background-color: #ABAFB2;
+  .center1000;
+}
+
+footer{
+  height: @footer_height;
+  .center1000;
+  background: url(../img/footer_bg.png) no-repeat 50% 50%;
+}
+
