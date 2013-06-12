@@ -43,21 +43,41 @@ class Wpd_General_Settings extends Wpd_Panel {
 	}
 	// 设置面板标题
 	function add_meta_boxes(){
-		add_meta_box( 'wpd-general-text-settings', __('单行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-general-textarea-settings', __('多行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-general-select-settings', __('下拉菜单选项', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-general-checkbox-settings', __('复选框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-general-upload-settings', __('图片上传', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-custom-text-settings', __('自定义文本内容', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-custom-fields-settings', __('自定义字段内容', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
-		add_meta_box( 'wpd-color-settings', __('颜色', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+        add_meta_box('mw_admin_welcome','欢迎信息',array(&$this,'meta_box'),$this->page_hook,'normal');
+//		add_meta_box( 'wpd-general-text-settings', __('单行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-general-textarea-settings', __('多行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-general-select-settings', __('下拉菜单选项', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-general-checkbox-settings', __('复选框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-general-upload-settings', __('图片上传', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-custom-text-settings', __('自定义文本内容', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-custom-fields-settings', __('自定义字段内容', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
+//		add_meta_box( 'wpd-color-settings', __('颜色', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
 	}
 
 	// 设置选项开始
 	function fields(){
 		$fields = array(	//这一行绝对不可以删除,否则程序出错！
 			// 单行文本
-
+            'mw_admin_welcome'=>array(
+                array(
+                    'type' => 'custom',
+                    'name' => 'wpd_custom_text',
+                    'title' => '模板名称',
+                    'desc' => '上音电子音乐周2013专用模板'
+                ),
+                array(
+                    'type' => 'custom',
+                    'name' => 'wpd_custom_text',
+                    'title' => '程序开发',
+                    'desc' => 'chengs&nbsp;(电话:13761633275,QQ:12807733)'
+                ),
+                array(
+                    'type' => 'custom',
+                    'name' => 'wpd_custom_text',
+                    'title' => '艺术设计',
+                    'desc' => 'Leo&nbsp;(QQ:284488526)'
+                )
+            ),
 			'wpd-general-text-settings' => array(
 
 				array(
@@ -168,8 +188,14 @@ class Wpd_General_Settings extends Wpd_Panel {
 					'type' => 'custom',
 					'name' => 'wpd_custom_text',
 					'title' => __('自定义文本','wpd'),
-					'desc' => __('这里是自定义文本的内容。你可以在这个版块写一些帮助文档之类的东东。','wpd')
-					)
+					'desc' => __('这里是自定义文本的内容。<br>你可以在这个版块写一些帮助文档之类的东东。','wpd')
+					),
+                array(
+                    'type' => 'custom',
+                    'name' => 'wpd_custom_text',
+                    'title' => __('自定义文本','wpd'),
+                    'desc' => __('这里是自定义文本的内容。<br>你可以在这个版块写一些帮助文档之类的东东。','wpd')
+                )
 				),
 			// 颜色
 
