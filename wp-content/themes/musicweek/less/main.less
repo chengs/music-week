@@ -1,8 +1,10 @@
-@import-once "css3";
+@import-once "veryless";
 //global
 @main_width:1000px;
 @header_height:164px;
 @footer_height:264px;
+
+
 body{
   background-color: #000;
   background-image: url(../img/body_bg.png);
@@ -118,7 +120,8 @@ nav#topNav{
 }
 
 div#container{
-  background-color: #ABAFB2;
+  background:#ABAFB2 url(../img/container_bg.png) 100% 100% repeat-y;
+  overflow: hidden;
   .center1000;
 }
 
@@ -128,3 +131,6 @@ footer{
   background: url(../img/footer_bg.png) no-repeat 50% 50%;
 }
 
+.clear{
+  .clearfix();
+}

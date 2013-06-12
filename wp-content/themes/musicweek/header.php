@@ -15,20 +15,12 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
-    <link rel="stylesheet/less" type="text/css" href="<?php bloginfo('template_url'); ?>/less/main.less">
     <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/less-1.3.3.min.js"></script>
 </head>
 <body>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
-    improve your experience.</p>
-<![endif]-->
-
 <!-- Add your site or application content here -->
 <nav id="topNav">
     <div class="container">
