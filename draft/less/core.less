@@ -13,6 +13,11 @@ body{
   font-family: "微软雅黑", "文泉驿微米黑", "黑体", "Microsoft Yahei", "STHeiti", "Microsoft JhengHei", "SimHei", serif;
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
 .center1000{
   width:@main_width;
   margin: 0 auto;
@@ -77,30 +82,30 @@ nav#topNav{
     text-decoration: none;
     text-decoration-color: #dfe0e4;
   }
-  .dropdown{
+  .menu-item{
     position: relative;
   }
-  .dropdown:hover ul.dropdown-menu{
+  .menu-item:hover ul.sub-menu {
     display: block;
   }
-  ul.dropdown-menu{
+  ul.sub-menu {
     position: absolute;
     left:28px;
     padding: 0;
     display: none;
   }
-  ul.dropdown-menu li{
+  ul.sub-menu li{
     padding: 0 !important;
     border-top: 1px solid #7A858F !important;
     border-right: none !important;
     border-left: none !important;
     border-bottom: none !important;
   }
-  ul.dropdown-menu li a{
+  ul.sub-menu li a{
     background-image: none !important;
     background-color: #2B343C !important;
   }
-  ul.dropdown-menu li a:hover{
+  ul.sub-menu li a:hover{
     background-color: #E7ECF0 !important;
     color: #2b343c !important;
   }

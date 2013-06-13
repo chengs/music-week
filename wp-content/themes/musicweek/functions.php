@@ -4,12 +4,15 @@ require_once( TEMPLATEPATH . '/admin/panel.php');
 require_once( TEMPLATEPATH . '/admin/theme-form.php');
 require_once( TEMPLATEPATH . '/admin/theme-options.php' );
 
-function mw_style(){
-    if(is_home()){
-        echo '<link rel="stylesheet" href="'.get_bloginfo('url').'/draft/css/index.css">';
-    }else if(is_single()){
-        echo '<link rel="stylesheet" href="'.get_bloginfo('url').'/draft/css/article.css">';
-    }else{
-        echo '<link rel="stylesheet" href="'.get_bloginfo('url').'/draft/css/core.css">';
+add_action( 'after_setup_theme', 'mw_setup' );
+
+function mw_setup(){
+    //绑定导航条
+    if (function_exists('register_nav_menus')){
+        register_nav_menus( array(
+            'mainNav' => '主导航'
+        ) );
     }
+    //文章缩略图功能
+    add_theme_support( 'post-thumbnails' ); //激活文章和页面的缩略图功能。
 }

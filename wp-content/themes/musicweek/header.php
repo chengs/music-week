@@ -10,8 +10,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
+    <title><?php wp_title('-', true, 'right'); echo get_option('blogname');?></title>
+    <meta name="description" content="<?php get_option('blogdescription');?>">
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -24,26 +24,27 @@
 <!-- Add your site or application content here -->
 <nav id="topNav">
     <div class="container">
-        <span class="logo"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/navtop_logo.png" alt=""/></a></span>
-        <span class="weibo"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/navtop_weibo.png" alt=""/></a></span>
+        <span class="logo"><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_logo.png" alt=""/></a></span>
+        <span class="weibo"><a href="<?php echo get_option('mw_weibo_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_weibo.png" alt=""/></a></span>
     </div>
 </nav>
 <header>
     <div class="container">
         <nav id="mainNav" class="nav">
-            <ul>
-                <li><a href="#">关于我们</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">2013音乐周</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">活动日程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                        <li><a href="#">新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                        <li><a href="#">作品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">往届回顾</a></li>
-                <li><a href="#">EMW圈子</a></li>
-            </ul>
+<!--            <ul>-->
+<!--                <li><a href="#">关于我们</a></li>-->
+<!--                <li class="dropdown">-->
+<!--                    <a href="#" class="dropdown-toggle">2013音乐周</a>-->
+<!--                    <ul class="dropdown-menu">-->
+<!--                        <li><a href="#">活动日程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
+<!--                        <li><a href="#">新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
+<!--                        <li><a href="#">作品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li><a href="#">往届回顾</a></li>-->
+<!--                <li><a href="#">EMW圈子</a></li>-->
+<!--            </ul>-->
+            <?php wp_nav_menu(array( 'menu' => 'mainNav', 'depth' => 2));?>
         </nav>
     </div>
 </header>
