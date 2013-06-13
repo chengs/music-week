@@ -18,6 +18,7 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
+    <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/core.css"/>
     <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>

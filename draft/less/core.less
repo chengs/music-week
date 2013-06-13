@@ -124,7 +124,7 @@ nav#topNav{
   }
 }
 
-div#container{
+div.bodyConntainer{
   background:#ABAFB2 url(../img/container_bg.png) 100% 100% repeat-y;
   overflow: hidden;
   .center1000;
@@ -139,3 +139,129 @@ footer{
 .clear{
   .clearfix();
 }
+
+//article
+div#container{
+  .content{
+    margin:30px auto 60px auto;
+    width:904px;
+    min-height: 300px;
+    background-color: #FFF;
+    background-color: rgba(255,255,255,0.9);
+  }
+  .content{
+    .nav{
+      color:#143859;
+      overflow: hidden;
+      .cat{
+        float:left;
+        display: inline-block;
+        height:30px;
+        min-width: 154px;
+        border:1px solid transparent;
+        text-align: center;
+        background: url(../img/cat_bg.png) 50% 50% no-repeat;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+        a{
+          color:#143859;
+          text-decoration: none;
+        }
+      }
+      .back{
+        float:right;
+        display: inline-block;
+        height:30px;
+        min-width: 75px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        a{
+          color:#143859;
+          letter-spacing: 1px;
+          text-decoration: none;
+        }
+      }
+    }
+    .article{
+      padding: 25px;
+      overflow: hidden;
+      p{
+        padding: 0;
+        margin: 0;
+      }
+      .title{
+        color:#000;
+        font-size: 24px;
+      }
+      .author{
+        color:#808285;
+        font-size: 12px;
+        padding: 12px 0;
+      }
+      .text p{
+        color:#58595b;
+        font-size: 14px;
+      }
+    }
+  }
+}
+//article end
+
+//index
+#container{
+  height:489px;
+  background: url(../img/index_bg.png) no-repeat;
+}
+
+
+#topicList{
+  .topic:first-child{
+    border-left:1px solid #000;
+  }
+  .topic{
+    float:left;
+    width:332px;
+    height:350px;
+    background: #FFF;
+    border-right: 1px solid #000;
+  }
+  .topic{
+    .img{
+      background-color: #0088d0;
+      width:332px;
+      float:left;
+      height:257px;
+    }
+    .intro{
+      width:332px-30px;
+      float:left;
+      height:93px;
+      padding: 0 15px;
+      position: relative;
+      .triangle{
+        position: absolute;
+        left:18px;
+        top:-14px;
+        border-color: transparent transparent #FFF transparent;
+        border-style: solid;
+        border-width: 0 10px 14px 10px;
+        height: 0;
+        width: 0;
+        display: inline-block;
+      }
+      .title{
+        font-size: 16px;
+        margin:16px 0 0 0;
+        padding: 0;
+      }
+      .info{
+        font-size: 14px;
+        padding: 0;
+        margin:5px 0 0 0;
+      }
+    }
+  }
+;
+}//index end

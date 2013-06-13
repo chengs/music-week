@@ -4,7 +4,6 @@
 */
 get_header();
 ?>
-    <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/article.css"/>
     <div id="container">
         <?php while (have_posts()) : the_post(); ?>
             <div class="content">

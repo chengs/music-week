@@ -1,5 +1,4 @@
 <?php get_header();?>
-    <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/index.css"/>
     <div id="container">
         <div id="topicList">
             <?php while (have_posts()) : the_post(); ?>
