@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-get_header();
+get_header('load');
 ?>
 <?php
 get_footer();

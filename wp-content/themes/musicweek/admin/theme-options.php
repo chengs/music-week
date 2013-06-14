@@ -56,6 +56,7 @@ class Wpd_General_Settings extends Wpd_Panel
         add_meta_box('mw_admin_welcome', '欢迎信息', array(&$this, 'meta_box'), $this->page_hook, 'normal');
         add_meta_box('mw_admin_static', '静态常量', array(&$this, 'meta_box'), $this->page_hook, 'normal');
         add_meta_box('mw_admin_index', '首页设定', array(&$this, 'meta_box'), $this->page_hook, 'normal');
+        add_meta_box('mw_admin_old', '往届作品页面设定', array(&$this, 'meta_box'), $this->page_hook, 'normal');
 //		add_meta_box( 'wpd-general-text-settings', __('单行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
 //		add_meta_box( 'wpd-general-textarea-settings', __('多行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
 //		add_meta_box( 'wpd-general-select-settings', __('下拉菜单选项', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
@@ -106,6 +107,16 @@ class Wpd_General_Settings extends Wpd_Panel
                     'name' => 'mw_index_news',
                     'title' => '首页新闻列表',
                     'desc' => '内容为新闻ID，英文逗号分割',
+                    'value' => '',
+                    'class' => 'regular-text code'
+                ),
+            ),
+            'mw_admin_old' => array(
+                array(
+                    'type' => 'text',
+                    'name' => 'mw_old_catIds',
+                    'title' => '往届作品分类ID列表',
+                    'desc' => '内容为分类ID，英文逗号分割',
                     'value' => '',
                     'class' => 'regular-text code'
                 ),

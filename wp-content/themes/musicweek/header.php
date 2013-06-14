@@ -16,10 +16,11 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
+    <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/normalize.css">
+    <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('url');?>/draft/css/core.css"/>
-    <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="<?php bloginfo('url');?>/draft/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="<?php bloginfo('url');?>/draft/js/vendor/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 <!-- Add your site or application content here -->

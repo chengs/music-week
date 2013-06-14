@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: 关于我们模板
+    Template Name: 活动日程模板
 */
 get_header();
 ?>
@@ -8,7 +8,7 @@ get_header();
         <?php while (have_posts()) : the_post(); ?>
             <div class="content">
                 <div class="nav">
-                    <span class="cat">About us</span>
+                    <span class="cat">Schedule-日程</span>
                 </div>
                 <div class="article">
                     <div class="text">
