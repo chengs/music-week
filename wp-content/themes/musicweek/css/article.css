@@ -70,3 +70,6 @@ a {
   font-weight: bold;
   text-decoration: underline;
 }
+table {
+  margin-bottom: 24px;
+}

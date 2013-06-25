@@ -704,6 +704,9 @@ article a {
   font-weight: bold;
   text-decoration: underline;
 }
+article table {
+  margin-bottom: 24px;
+}
 div#main {
   background: url(../img/main_bg.png) no-repeat;
   background-color: transparent;

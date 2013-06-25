@@ -704,3 +704,6 @@ article a {
   font-weight: bold;
   text-decoration: underline;
 }
+article table {
+  margin-bottom: 24px;
+}
