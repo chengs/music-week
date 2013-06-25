@@ -1,5 +1,5 @@
 //Old Works Nav
-jQuery(function () {
+jQuery(function ($) {
     //News Gallery
     if($('#newsGallery')){
         var gallery = $('#newsGallery');

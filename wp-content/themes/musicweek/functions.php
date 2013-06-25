@@ -22,11 +22,11 @@ function mw_setup(){
     wp_register_style('core',"$basePath/css/core.css");
     wp_register_style('fullCalendar',"$basePath/css/fullcalendar.css");
     //注册js
-    wp_register_script('jQuery',"$basePath/js/jquery-1.9.1.min.js",array(),'1.9.1',true);
-    wp_register_script('main',"$basePath/js/main.js",array('jQuery'),'latest',true);
-    wp_register_script('fullCalendar',"$basePath/js/fullCalendar.js",array('jQuery'),'latest',true);
+    //wp_register_script('jquery',"$basePath/js/jquery-1.9.1.min.js",array(),'1.9.1',true);
+    wp_register_script('main',"$basePath/js/main.js",array('jquery'),'latest',true);
+    wp_register_script('fullCalendar',"$basePath/js/fullCalendar.js",array('jquery'),'latest',true);
     //
-    wp_enqueue_script('jQuery');
+    wp_enqueue_script('jquery');
     wp_enqueue_script('main');
 }
 
