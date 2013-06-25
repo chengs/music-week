@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: 文章页模板
+    Template Name: 默认页面模板
 */
 get_header();
 ?>
@@ -8,17 +8,12 @@ get_header();
         <?php while (have_posts()) : the_post(); ?>
             <div class="content">
                 <div class="nav">
-                    <span class="cat"><?php the_category(','); ?></span>
-                    <span class="back"><a href="<?php bloginfo('url'); ?>">返回</a></span>
+                    <span class="cat"><?php the_title();?></span>
                 </div>
                 <div class="article">
-                    <p class="title"><?php the_title(); ?></p>
-
-                    <p class="author">发表于 <?php the_date('Y-m-d')?> 由 <?php the_author(',');?> </p>
-
                     <div class="text">
                         <article>
-                        <?php the_content(); ?>
+                            <?php the_content(); ?>
                         </article>
                     </div>
                 </div>

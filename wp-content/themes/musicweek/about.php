@@ -12,7 +12,9 @@ get_header();
                 </div>
                 <div class="article">
                     <div class="text">
-                        <?php the_content(); ?>
+                        <article>
+                            <?php the_content(); ?>
+                        </article>
                     </div>
                 </div>
             </div>
