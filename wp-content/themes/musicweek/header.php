@@ -14,11 +14,12 @@
 <nav id="topNav">
     <div class="container">
         <span class="logo"><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_logo.png" alt=""/></a></span>
-        <span class="weibo"><a href="<?php echo get_option('mw_weibo_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_weibo.png" alt=""/></a></span>
+        <span class="language"><a href="#">English</a> | <a href="#">中文</a></span>
     </div>
 </nav>
 <header>
     <div class="container">
+        <a href="<?php bloginfo('url');?>" id="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""/></a>
         <nav id="mainNav" class="nav">
             <?php wp_nav_menu(array( 'menu' => 'mainNav', 'depth' => 2));?>
         </nav>

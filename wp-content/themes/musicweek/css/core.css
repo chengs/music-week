@@ -133,9 +133,14 @@ nav#topNav .container {
 nav#topNav .container .logo {
   padding-left: 8px;
 }
-nav#topNav .container .weibo {
+nav#topNav .container .language {
   float: right;
   padding-right: 30px;
+}
+nav#topNav .container .language a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #A9A9A9;
 }
 .nav {
   margin: 0 auto;
@@ -203,6 +208,14 @@ nav#topNav .container .weibo {
 .nav ul.sub-menu li a:hover {
   background-color: #E7ECF0 !important;
   color: #2b343c !important;
+}
+#logo {
+  display: block;
+  width: 576px;
+  height: 109px;
+  padding-top: 10px;
+  padding-left: 30px;
+  float: left;
 }
 #mainNav {
   padding-top: 124px;
@@ -316,43 +329,53 @@ div#indexContainer {
   width: 332px;
   height: 350px;
   background: #FFF;
-  padding-bottom: 20px;
-  border-right: 1px solid #000;
-}
-#topicList .topic .img {
-  background-color: #0088d0;
-  width: 332px;
-  float: left;
-  height: 257px;
-}
-#topicList .topic .intro {
-  width: 302px;
-  float: left;
-  height: 93px;
-  padding: 0 15px;
+  border-right: 1px solid #FFF;
   position: relative;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
 }
-#topicList .topic .intro .triangle {
+#topicList .topic .front {
+  z-index: 900;
+  float: none;
   position: absolute;
-  left: 18px;
-  top: -14px;
-  border-color: transparent transparent #FFF transparent
-      ;
-  border-style: solid;
-  border-width: 0 10px 14px 10px;
-  height: 0;
-  width: 0;
-  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 332px;
+  height: 350px;
+  background-color: #0088d0;
 }
-#topicList .topic .intro .title {
-  font-size: 16px;
-  margin: 16px 0 0 0;
+#topicList .topic .front img {
+  border: none;
+}
+#topicList .topic .back {
+  z-index: 800;
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 272px;
+  height: 280px;
+  padding: 70px 30px 0 30px;
+  background-color: #D4D6D8;
+  color: #000;
+}
+#topicList .topic .back .title {
+  font-size: 28px;
+  line-height: 30px;
   padding: 0;
+  margin: 5px 0 0 0;
 }
-#topicList .topic .intro .info {
+#topicList .topic .back .info {
   font-size: 14px;
   padding: 0;
   margin: 5px 0 0 0;
+}
+.topic.flip .front {
+  display: none;
+  z-index: 900;
+}
+.topic.flip .back {
+  z-index: 1000;
 }
 div#worksList {
   width: 888px;

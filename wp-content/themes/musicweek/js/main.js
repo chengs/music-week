@@ -1,5 +1,13 @@
 //Old Works Nav
 jQuery(function ($) {
+    //Topic
+    if($('#topicList')){
+        $('.topic').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        })
+    }
     //News Gallery
     if($('#newsGallery')){
         var gallery = $('#newsGallery');
