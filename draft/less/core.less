@@ -5,7 +5,11 @@
 @header_height: 164px;
 @footer_height: 264px;
 
+.reset();
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: #000;
   background-image: url(../img/body_bg.png);
   background-position: 50% 0;
@@ -571,3 +575,9 @@ div#newsContainer{
   }
 }
 //News End
+
+
+//Article Style
+article{
+  @import "article";
+}
