@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+get_header();
+wp_enqueue_script('quickflip');
+?>
     <div id="indexContainer" class="bodyContainer">
         <?php
         $pIdsStr = get_option('mw_index_news');

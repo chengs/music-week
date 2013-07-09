@@ -134,6 +134,7 @@ nav#topNav .container .logo {
   padding-left: 8px;
 }
 nav#topNav .container .language {
+  color: #A9A9A9;
   float: right;
   padding-right: 30px;
 }
@@ -392,10 +393,11 @@ div#worksList .work {
   margin-bottom: 20px;
 }
 div#worksList .work .img {
-  background-color: #0088d0;
+  background-color: #FFF;
   width: 220px;
   float: left;
   height: 123px;
+  text-align: center;
 }
 div#worksList .work .intro {
   height: 45px;

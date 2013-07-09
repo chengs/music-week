@@ -305,10 +305,13 @@ class WP_FullCalendar{
 						center: 'title',
 						right: '<?php echo implode(',', get_option('wpfc_available_views', array('month','basicWeek','basicDay'))); ?>'
 					},
-					month: <?php echo self::$args['month']; ?>,
-					year: <?php echo self::$args['year']; ?>,
+					//month: <?php echo self::$args['month']; ?>,
+					//year: <?php echo self::$args['year']; ?>,
+                    month:9,
+                    year:2013,
+                    date:19,
 					theme: WPFC.wpfc_theme,
-					firstDay: WPFC.firstDay,
+					firstDay: 6,
 					editable: false,
 					eventSources: [{
 							url : WPFC.ajaxurl,
@@ -377,9 +380,9 @@ class WP_FullCalendar{
 						wpfc_loaded = true;
 				    }
 				};
-				if( WPFC.wpfc_locale ){
+				/*if( WPFC.wpfc_locale ){
 					$.extend(fullcalendar_args, WPFC.wpfc_locale);
-				}
+				}*/
 				$(document).trigger('wpfc_fullcalendar_args', [fullcalendar_args]);
 				$('#wpfc-calendar').fullCalendar(fullcalendar_args);
 				if( WPFC.wpfc_theme_css != '' ){ // add themeroller
