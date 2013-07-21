@@ -305,10 +305,12 @@ class WP_FullCalendar{
 						center: 'title',
 						right: '<?php echo implode(',', get_option('wpfc_available_views', array('month','basicWeek','basicDay'))); ?>'
 					},
-					month: <?php echo self::$args['month']; ?>,
-					year: <?php echo self::$args['year']; ?>,
+					//month: <?php echo self::$args['month']; ?>,
+					//year: <?php echo self::$args['year']; ?>,
 					theme: WPFC.wpfc_theme,
-					firstDay: WPFC.firstDay,
+                    height:2000,
+                    contentHeight:2000,
+					firstDay: 6,
 					editable: false,
 					eventSources: [{
 							url : WPFC.ajaxurl,
@@ -321,11 +323,16 @@ class WP_FullCalendar{
                         day:'按日期查看',
                         week:'按周查看'
                     },
+                    minTime:'8:00am',
+                    maxTime:'8:00pm',
                     titleFormat:{
                         month:'yyyy.m',
                         week:"MM月d日 至 {MM月d日}",
                         day:'yyyy年MM月d日'
                     },
+                    year:2013,
+                    month:9,
+                    date:19,
 				    eventRender: function(event, element) {
 						if( event.post_id > 0 && WPFC.wpfc_qtips == 1 ){
 							var event_data = { action : 'wpfc_qtip_content', post_id : event.post_id, event_id:event.event_id };
@@ -378,7 +385,7 @@ class WP_FullCalendar{
 				    }
 				};
 				if( WPFC.wpfc_locale ){
-					$.extend(fullcalendar_args, WPFC.wpfc_locale);
+					//$.extend(fullcalendar_args, WPFC.wpfc_locale);
 				}
 				$(document).trigger('wpfc_fullcalendar_args', [fullcalendar_args]);
 				$('#wpfc-calendar').fullCalendar(fullcalendar_args);

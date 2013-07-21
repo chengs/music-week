@@ -14,7 +14,7 @@
 <nav id="topNav">
     <div class="container">
         <span class="logo"><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_logo.png" alt=""/></a></span>
-        <span class="language"><a href="#">English</a> | <a href="#">中文</a></span>
+        <span class="language"><img src="<?php bloginfo('template_url'); ?>/img/china.png" alt=""/></a><span>&nbsp;&nbsp;</span><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/english.png" alt=""/></a></span>
     </div>
 </nav>
 <header>

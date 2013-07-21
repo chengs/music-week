@@ -203,10 +203,14 @@ nav#topNav .container .language a {
 }
 .nav ul.sub-menu li a {
   background-image: none !important;
-  background-color: #2B343C !important;
+  background-color: rgba(43,52,60,0.7) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b22b343c',endColorstr='#b22b343c')" !important;
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b22b343c',endColorstr='#b22b343c')" !important;
 }
 .nav ul.sub-menu li a:hover {
-  background-color: #E7ECF0 !important;
+  background-color: rgba(231,236,240,0.7) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2e7ecf0',endColorstr='#b2e7ecf0')" !important;
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2e7ecf0',endColorstr='#b2e7ecf0')" !important;
   color: #2b343c !important;
 }
 #logo {
@@ -392,7 +396,8 @@ div#worksList .work {
   margin-bottom: 20px;
 }
 div#worksList .work .img {
-  background-color: #0088d0;
+  background-color: #FFF;
+  text-align: center;
   width: 220px;
   float: left;
   height: 123px;

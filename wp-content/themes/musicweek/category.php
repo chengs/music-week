@@ -20,7 +20,7 @@ get_header();
                     <div class="intro">
                         <span class="triangle"></span>
                         <p class="title"><?php the_title();?></p>
-                        <p class="info"><?php the_author();?></p>
+                        <p class="info"><?php echo get_post_meta(get_the_ID(),'subtitle',true);?></p>
                         <p class="info"><?php the_tags("","&nbsp;","");?></p>
                     </div>
                 </a>

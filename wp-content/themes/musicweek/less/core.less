@@ -5,9 +5,7 @@
 @header_height: 164px;
 @footer_height: 264px;
 
-  .reset()
-
-;
+.reset();
 
 body {
   margin: 0;
@@ -115,10 +113,12 @@ nav#topNav {
   }
   ul.sub-menu li a {
     background-image: none !important;
-    background-color: #2B343C !important;
+//    background-color: #2B343C !important;
+    .background-rgba(43,52,60,0.7) !important;
   }
   ul.sub-menu li a:hover {
-    background-color: #E7ECF0 !important;
+//   background-color: #E7ECF0 !important;
+    .background-rgba(231,236,240,0.7) !important;
     color: #2b343c !important;
   }
 }
@@ -323,7 +323,8 @@ div#worksList {
   }
   .work {
     .img {
-      background-color: #0088d0;
+      background-color: #FFF;
+      text-align: center;
       width: 220px;
       float: left;
       height: 123px;
