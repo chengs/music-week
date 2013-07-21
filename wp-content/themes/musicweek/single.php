@@ -14,7 +14,7 @@ get_header();
                 <div class="article">
                     <p class="title"><?php the_title(); ?></p>
 
-                    <p class="author">发表于 <?php the_date('Y-m-d')?> 由 <?php the_author(',');?> </p>
+                    <p class="author">发表于 <?php the_date('Y-m-d')?></p>
 
                     <div class="text">
                         <article>
