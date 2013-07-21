@@ -6,7 +6,7 @@ wp_enqueue_script('quickflip');
         <?php
         $pIdsStr = get_option('mw_index_news');
         $pIds = explode(',', $pIdsStr);
-        query_posts(array('post__in' => $pIds));
+        query_posts(array('post__in' => $pIds,'ignore_sticky_posts' => 1));
         ?>
         <div id="topicList">
             <?php while (have_posts()) : the_post(); ?>
