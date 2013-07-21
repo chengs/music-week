@@ -254,20 +254,21 @@ div#indexContainer {
   }
   .topic {
     .front {
-      z-index: 900;
+      z-index: 800;
       float: none;
       position: absolute;
       top: 0;
       left: 0;
       width: 332px;
       height: 350px;
-      background-color: #0088d0;
+      background-color: transparent;
       img{
         border: none;
       }
     }
     .back {
-      z-index: 800;
+      z-index: 700;
+      display: none;
       float:none;
       position: absolute;
       top: 0;
@@ -275,8 +276,9 @@ div#indexContainer {
       width: 332px - 60px;
       height: 350px - 70px;
       padding: 70px 30px 0 30px;
-      background-color: #D4D6D8;
-      color: #000;
+//      background-color: #D4D6D8;
+      .background-rgba(0,0,0,0.7);
+      color: #FFF;
       .title {
         font-size: 28px;
         line-height: 30px;
@@ -294,11 +296,11 @@ div#indexContainer {
 
 .topic.flip{
   .front {
-    display: none;
     z-index: 900;
   }
   .back{
-    z-index: 1000;
+    display: block !important;
+    z-index: 1000 !important;
   }
 }
 //index end

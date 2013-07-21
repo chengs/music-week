@@ -339,20 +339,21 @@ div#indexContainer {
   -moz-perspective: 600px;
 }
 #topicList .topic .front {
-  z-index: 900;
+  z-index: 800;
   float: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 332px;
   height: 350px;
-  background-color: #0088d0;
+  background-color: transparent;
 }
 #topicList .topic .front img {
   border: none;
 }
 #topicList .topic .back {
-  z-index: 800;
+  z-index: 700;
+  display: none;
   float: none;
   position: absolute;
   top: 0;
@@ -360,8 +361,10 @@ div#indexContainer {
   width: 272px;
   height: 280px;
   padding: 70px 30px 0 30px;
-  background-color: #D4D6D8;
-  color: #000;
+  background-color: rgba(0,0,0,0.7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2000000',endColorstr='#b2000000')";
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2000000',endColorstr='#b2000000')";
+  color: #FFF;
 }
 #topicList .topic .back .title {
   font-size: 28px;
@@ -375,11 +378,11 @@ div#indexContainer {
   margin: 5px 0 0 0;
 }
 .topic.flip .front {
-  display: none;
   z-index: 900;
 }
 .topic.flip .back {
-  z-index: 1000;
+  display: block !important;
+  z-index: 1000 !important;
 }
 div#worksList {
   width: 888px;
