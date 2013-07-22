@@ -149,7 +149,7 @@ div#indexContainer{height:489px;background:url(../img/index_bg.png) no-repeat}
 #topicList .topic .back .info{font-size:14px;padding:0;margin:5px 0 0 0}
 .topic.flip .front{z-index:900}
 .topic.flip .back{display:block !important;z-index:1000 !important}
-div#worksList{width:888px;margin:20px auto;overflow:hidden}div#worksList .work{float:left;width:220px;height:184px;background:#fff;border-right:1px solid #fff;overflow:hidden;margin-bottom:20px}
+div#worksList{width:888px;margin:20px auto;overflow:hidden}div#worksList .work{float:left;width:220px;height:184px;background:#fff;border-right:1px solid #fff;overflow:hidden;margin-bottom:20px}div#worksList .work:hover{opacity:.5;filter:alpha(opacity=50)}
 div#worksList .work .img{background-color:#fff;text-align:center;width:220px;float:left;height:123px}
 div#worksList .work .intro{height:45px;width:200px;float:left;padding:10px 8px;position:relative}div#worksList .work .intro .triangle{position:absolute;left:10px;top:-10px;border-color:transparent transparent #fff transparent;border-style:solid;border-width:0 10px 10px 10px;height:0;width:0;display:inline-block}
 div#worksList .work .intro .title{font-size:12px;line-height:12px;margin:0;padding:0}
@@ -157,7 +157,7 @@ div#worksList .work .intro .info{font-size:10px;line-height:10px;padding:0;margi
 div#oldContainer .year{display:block;width:888px;margin:0 auto;overflow:hidden;position:relative}div#oldContainer .year>.mark .title{display:inline-block;height:23px;min-width:202px;padding-left:5px;letter-spacing:2px;text-align:left;line-height:22px;font-size:18px;color:#fff;background:url(../img/old_item_bg.png) no-repeat}
 div#oldContainer .year>.mark .direction{display:inline-block;height:23px;float:right;margin-right:20px}div#oldContainer .year>.mark .direction a{color:#000;font-size:22px;line-height:22px}
 div#oldContainer .year .works{height:204px;width:99999px;overflow:hidden}
-div#oldContainer .year .work{float:left;width:220px;height:184px;background:#fff;border:1px solid #fff;overflow:hidden;margin-bottom:20px}
+div#oldContainer .year .work{float:left;width:220px;height:184px;background:#fff;border:1px solid #fff;overflow:hidden;margin-bottom:20px}div#oldContainer .year .work:hover{opacity:.5;filter:alpha(opacity=50)}
 div#oldContainer .year .work .img{background-color:#0088d0;width:220px;float:left;height:123px}
 div#oldContainer .year .work .intro{height:45px;width:200px;float:left;padding:10px 8px;position:relative}div#oldContainer .year .work .intro .triangle{position:absolute;left:10px;top:-10px;border-color:transparent transparent #fff transparent;border-style:solid;border-width:0 10px 10px 10px;height:0;width:0;display:inline-block}
 div#oldContainer .year .work .intro .title{font-size:12px;line-height:12px;margin:0;padding:0}
@@ -174,6 +174,11 @@ div#newsContainer .topNews .topLock .news .intro{margin:0;padding-top:10px;font-
 div#newsContainer .newsList{width:864px;margin:10px auto;overflow:hidden}div#newsContainer .newsList .news{overflow:hidden;height:123px;border-bottom:1px solid #ddd;padding:10px 0}div#newsContainer .newsList .news .img{background-color:#0088d0;width:220px;float:left;height:123px}
 div#newsContainer .newsList .news .text{float:left;height:123px;padding:5px}div#newsContainer .newsList .news .text .title{margin:0;letter-spacing:2px;font-size:26px;line-height:26px;color:#1d85c7}
 div#newsContainer .newsList .news .text .intro{margin:0;padding-top:10px;font-size:12px;line-height:12px;color:#000}
+#schedule h1{text-align:center;font-size:16px;font-weight:normal;color:#fff;background:#59a3fc;padding:15px;margin-bottom:10px;border:2px solid #fff;border:2px solid rgba(255,255,255,0.7)}
+#schedule table{font-size:12px;width:100%}#schedule table td{padding:0;background-color:rgba(204,204,204,0.7);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');border:2px solid #fff}
+#schedule table td.week{padding:15px;background:#a9a9a9;text-align:center;min-width:60px}
+#schedule table td>div:first-child{border-top:none}
+#schedule table td>div{border-top:2px solid #fff;width:100%;border-collapse:collapse;text-align:center;padding:15px 0;color:#000;font-size:10px;font-weight:normal}
 article *{font-family:"微软雅黑","文泉驿微米黑","黑体","Microsoft Yahei","STHeiti","Microsoft JhengHei","SimHei",serif}
 article h1,article h2,article h3,article h4,article h5,article p{padding:0;margin:0}
 article h1,article h2,article h3,article h4{letter-spacing:2px}

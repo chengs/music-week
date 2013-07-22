@@ -1,7 +1,7 @@
 @import "../veryless/veryless";
 @import "../veryless/plugin/css3";
 @import "../veryless/plugin/animation";
-
+@import "../veryless/plugin/brand-color";
 //global
 @main_width: 1000px;
 @header_height: 164px;
@@ -324,6 +324,10 @@ div#worksList {
     border-right: 1px solid #FFF;
     overflow: hidden;
     margin-bottom: 20px;
+
+    &:hover{
+      .opacity(50);
+    }
   }
   .work {
     .img {
@@ -415,6 +419,10 @@ div#oldContainer {
       border: 1px solid #FFF;
       overflow: hidden;
       margin-bottom: 20px;
+
+      &:hover{
+        .opacity(50);
+      }
     }
     .work {
       .img {
@@ -612,6 +620,53 @@ div#newsContainer {
 }
 
 //News End
+
+//Schedule
+#schedule{
+  h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color:#FFF;
+    background: #59a3fc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #FFF;
+    border: 2px solid rgba(255,255,255,0.7);
+  }
+  table{
+    font-size: 12px;
+    width: 100%;
+    td{
+      padding: 0;
+      .background-rgba(204,204,204,0.7);
+      border: 2px solid #FFF;
+
+    }
+    td.week{
+      padding: 15px;
+      background: #A9A9A9;
+      text-align: center;
+      min-width: 60px;
+    }
+    td > div:first-child{
+      border-top: none;
+    }
+    td > div{
+      border-top: 2px solid #FFF;
+      // min-height: 100px;
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 15px 0;
+      color:#000;
+      font-size: 10px;
+      font-weight: normal;
+    }
+  }
+}
+
+//Schedule End
 
 //Article Style
 article {
