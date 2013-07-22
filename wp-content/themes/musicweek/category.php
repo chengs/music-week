@@ -10,6 +10,13 @@ get_header();
         <div class="nav">
             <span class="cat"><?php echo single_cat_title( '', false );?></span>
         </div>
+        <?php
+            //实现分类页置顶
+            add_filter('the_posts',  'mw_stickey' );
+            $query_string .= "&orderby=rand";
+            query_posts($query_string);
+
+        ?>
         <div id="worksList">
             <?php while (have_posts()) : the_post(); ?>
             <div class="work">

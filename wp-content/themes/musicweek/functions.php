@@ -31,10 +31,8 @@ function mw_setup(){
     wp_enqueue_script('main');
 }
 
-//实现分类页置顶
-add_filter('the_posts',  'mw_stickey' );
 function mw_stickey( $posts ) {
-    if(is_home() || !is_main_query() || !is_archive())
+    if(is_home() || !is_archive())
         return $posts;
 
     global $wp_query;
