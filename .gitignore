@@ -16,3 +16,6 @@ sitemap.xml.gz
 sftp-config.json
 
 wp-content/themes/.DS_Store
+
+.DS_Store
+
