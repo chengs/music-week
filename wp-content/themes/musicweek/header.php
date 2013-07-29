@@ -12,7 +12,7 @@
 <nav id="topNav">
     <div class="container">
         <span class="logo"><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/navtop_logo.png" alt=""/></a></span>
-        <span class="language"><a href="/"><img src="<?php bloginfo('template_url'); ?>/img/china.png" alt=""/></a><span>&nbsp;&nbsp;</span><a href="/english/"><img src="<?php bloginfo('template_url'); ?>/img/english.png" alt=""/></a></span>
+        <span class="language"><a href="/">CN</a><span>&nbsp;|&nbsp;</span><a href="/english/">EN</a></span>
     </div>
 </nav>
 <header>
