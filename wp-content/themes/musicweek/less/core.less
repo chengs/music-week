@@ -16,7 +16,7 @@ body {
   background-image: url(../img/body_bg.png);
   background-position: 50% 0;
   background-repeat: no-repeat;
-  font-family: "Segoe UI","微软雅黑", "Microsoft Yahei","宋体" "STHeiti", "Microsoft JhengHei", "SimHei", serif;
+  font-family: "Arial","Segoe UI","微软雅黑", "Microsoft Yahei","宋体", serif;
 }
 
 a {
@@ -401,6 +401,9 @@ div#oldContainer {
           color: #000;
           font-size: 22px;
           line-height: 22px;
+          &:hover{
+            .background-rgba(204,204,204,0.3);
+          }
         }
         float: right;
         margin-right: 20px;
@@ -623,17 +626,6 @@ div#newsContainer {
 
 //Schedule
 #schedule{
-  h1{
-    text-align: center;
-    font-size: 16px;
-    font-weight: normal;
-    color:#FFF;
-    background: #59a3fc;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 2px solid #FFF;
-    border: 2px solid rgba(255,255,255,0.7);
-  }
   table{
     font-size: 12px;
     width: 100%;
@@ -641,27 +633,31 @@ div#newsContainer {
       padding: 0;
       .background-rgba(204,204,204,0.7);
       border: 2px solid #FFF;
-
+      vertical-align: top;
     }
     td.week{
       padding: 15px;
       background: #A9A9A9;
       text-align: center;
       min-width: 60px;
+      vertical-align: middle;
     }
-    td > div:first-child{
+    td > a:first-child{
       border-top: none;
     }
-    td > div{
+    td > a{
+      display: block;
+      text-decoration: none;
       border-top: 2px solid #FFF;
-      // min-height: 100px;
-      width: 100%;
       border-collapse: collapse;
-      text-align: center;
-      padding: 15px 0;
+      text-align: left;
+      padding: 15px 5px;
       color:#000;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: normal;
+    }
+    td > a:hover{
+      .opacity(50);
     }
   }
 }
@@ -670,5 +666,5 @@ div#newsContainer {
 
 //Article Style
 article {
-@import "article";
+  @import "article";
 }

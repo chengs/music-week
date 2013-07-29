@@ -7,10 +7,12 @@ get_header();
 
     <div id="oldContainer" class="bodyContainer">
         <div class="content">
+            <?php while (have_posts()) : the_post(); ?>
             <div class="nav">
-                <span class="cat">往届回顾</span>
+                <span class="cat"><?php the_title();?></span>
                 <span class="back"><a href="<?php bloginfo('url'); ?>">返回</a></span>
             </div>
+            <? endwhile; ?>
             <?php
             $catIdsStr = get_option('mw_old_catIds');
             if (strlen($catIdsStr)) {

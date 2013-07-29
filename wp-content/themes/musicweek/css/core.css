@@ -110,7 +110,7 @@ input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*heig
 input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
 table{border-collapse:collapse;border-spacing:0}
-body{margin:0;padding:0;background-color:#000;background-image:url(../img/body_bg.png);background-position:50% 0;background-repeat:no-repeat;font-family:"Segoe UI","微软雅黑","Microsoft Yahei","宋体" "STHeiti","Microsoft JhengHei","SimHei",serif}
+body{margin:0;padding:0;background-color:#000;background-image:url(../img/body_bg.png);background-position:50% 0;background-repeat:no-repeat;font-family:"Arial","Segoe UI","微软雅黑","Microsoft Yahei","宋体",serif}
 a{text-decoration:none;color:inherit}
 .center1000{width:1000px;margin:0 auto}
 header{height:164px;width:1000px;margin:0 auto;background:url(../img/header_bg.png) no-repeat 50% 50%}
@@ -155,7 +155,7 @@ div#worksList .work .intro{height:45px;width:200px;float:left;padding:10px 8px;p
 div#worksList .work .intro .title{font-size:12px;line-height:12px;margin:0;padding:0}
 div#worksList .work .intro .info{font-size:10px;line-height:10px;padding:0;margin:4px 0 0 0}
 div#oldContainer .year{display:block;width:888px;margin:0 auto;overflow:hidden;position:relative}div#oldContainer .year>.mark .title{display:inline-block;height:23px;min-width:202px;padding-left:5px;letter-spacing:2px;text-align:left;line-height:22px;font-size:18px;color:#fff;background:url(../img/old_item_bg.png) no-repeat}
-div#oldContainer .year>.mark .direction{display:inline-block;height:23px;float:right;margin-right:20px}div#oldContainer .year>.mark .direction a{color:#000;font-size:22px;line-height:22px}
+div#oldContainer .year>.mark .direction{display:inline-block;height:23px;float:right;margin-right:20px}div#oldContainer .year>.mark .direction a{color:#000;font-size:22px;line-height:22px}div#oldContainer .year>.mark .direction a:hover{background-color:rgba(204,204,204,0.3);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ccccccc',endColorstr='#4ccccccc');filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ccccccc',endColorstr='#4ccccccc')}
 div#oldContainer .year .works{height:204px;width:99999px;overflow:hidden}
 div#oldContainer .year .work{float:left;width:220px;height:184px;background:#fff;border:1px solid #fff;overflow:hidden;margin-bottom:20px}div#oldContainer .year .work:hover{opacity:.5;filter:alpha(opacity=50)}
 div#oldContainer .year .work .img{background-color:#0088d0;width:220px;float:left;height:123px}
@@ -174,14 +174,13 @@ div#newsContainer .topNews .topLock .news .intro{margin:0;padding-top:10px;font-
 div#newsContainer .newsList{width:864px;margin:10px auto;overflow:hidden}div#newsContainer .newsList .news{overflow:hidden;height:123px;border-bottom:1px solid #ddd;padding:10px 0}div#newsContainer .newsList .news .img{background-color:#0088d0;width:220px;float:left;height:123px}
 div#newsContainer .newsList .news .text{float:left;height:123px;padding:5px}div#newsContainer .newsList .news .text .title{margin:0;letter-spacing:2px;font-size:26px;line-height:26px;color:#1d85c7}
 div#newsContainer .newsList .news .text .intro{margin:0;padding-top:10px;font-size:12px;line-height:12px;color:#000}
-#schedule h1{text-align:center;font-size:16px;font-weight:normal;color:#fff;background:#59a3fc;padding:15px;margin-bottom:10px;border:2px solid #fff;border:2px solid rgba(255,255,255,0.7)}
-#schedule table{font-size:12px;width:100%}#schedule table td{padding:0;background-color:rgba(204,204,204,0.7);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');border:2px solid #fff}
-#schedule table td.week{padding:15px;background:#a9a9a9;text-align:center;min-width:60px}
-#schedule table td>div:first-child{border-top:none}
-#schedule table td>div{border-top:2px solid #fff;width:100%;border-collapse:collapse;text-align:center;padding:15px 0;color:#000;font-size:10px;font-weight:normal}
+#schedule table{font-size:12px;width:100%}#schedule table td{padding:0;background-color:rgba(204,204,204,0.7);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2cccccc',endColorstr='#b2cccccc');border:2px solid #fff;vertical-align:top}
+#schedule table td.week{padding:15px;background:#a9a9a9;text-align:center;min-width:60px;vertical-align:middle}
+#schedule table td>a:first-child{border-top:none}
+#schedule table td>a{display:block;text-decoration:none;border-top:2px solid #fff;border-collapse:collapse;text-align:left;padding:15px 5px;color:#000;font-size:12px;font-weight:normal}
+#schedule table td>a:hover{opacity:.5;filter:alpha(opacity=50)}
 article *{font-family:"微软雅黑","文泉驿微米黑","黑体","Microsoft Yahei","STHeiti","Microsoft JhengHei","SimHei",serif}
 article h1,article h2,article h3,article h4,article h5,article p{padding:0;margin:0}
-article h1,article h2,article h3,article h4{letter-spacing:2px}
 article h5,article p,article strong{letter-spacing:1.5px}
 article h1{font-size:32px;line-height:32px;padding:6px 0;font-weight:normal;color:#3579c1}
 article h2{color:#087fca;font-size:24px;line-height:28px;padding:0;font-weight:normal}
