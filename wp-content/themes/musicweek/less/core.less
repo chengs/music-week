@@ -38,7 +38,7 @@ header {
 
 nav#topNav {
   padding-top: 14px;
-  height: 55px - 14px;
+  height: (55px-14px);
   background: url(../img/topnav_bg.png) repeat-x;
   .container {
     .center1000;
@@ -198,6 +198,59 @@ footer {
   height: @footer_height;
   .center1000;
   background: url(../img/footer_bg.png) no-repeat 50% 50%;
+
+  ul#links{
+    padding: 80px 40px;
+    list-style: none;
+
+    li{
+      float: left;
+      padding-left: 40px;
+    }
+    li a{
+      display: inline-block;
+      height: 50px;
+      color:#A9A9A9;
+      font-size: 30px;
+      line-height: 50px;
+      vertical-align: middle;
+    }
+    li span{
+      height: 50px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .followUs{
+    float: left;
+  }
+  .contactUs{
+    float: right;
+  }
+  .followUs,.contactUs{
+    width: (500px - 40px);
+    padding:20px;
+    height:300px;
+
+    .title{
+      display: inline-block;
+      color: #A9A9A9;
+      font-size: 18px;
+      border-left: #5959EE 5px solid;
+      padding: 4px 4px 4px 10px;
+    }
+    p{
+      padding: 2px 2px 2px 14px;
+      font-size: 14px;
+      color: #A9A9A9;
+    }
+  }
+  .copyright{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1px;
+    color: #979393;
+  }
 }
 
 .clear {
@@ -275,8 +328,8 @@ div#indexContainer {
       position: absolute;
       top: 0;
       left: 0;
-      width: 332px - 60px;
-      height: 350px - 70px;
+      width: (332px - 60px);
+      height: (350px - 70px);
       padding: 70px 30px 0 30px;
 //      background-color: #D4D6D8;
       .background-rgba(0,0,0,0.7);
@@ -338,8 +391,8 @@ div#worksList {
       height: 123px;
     }
     .intro {
-      height: 184px - 123px - 16px;
-      width: 220px - 20px;
+      height: (184px - 123px - 16px);
+      width: (220px - 20px);
       float: left;
       padding: 10px 8px;
       position: relative;
@@ -435,8 +488,8 @@ div#oldContainer {
         height: 123px;
       }
       .intro {
-        height: 184px - 123px - 16px;
-        width: 220px - 20px;
+        height: (184px - 123px - 16px);
+        width: (220px - 20px);
         float: left;
         padding: 10px 8px;
         position: relative;
@@ -503,8 +556,8 @@ div#newsContainer {
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 80px - 20px;
-            width: 520px - 20px;
+            height: (80px - 20px);
+            width: (520px - 20px);
             padding: 10px;
             .background-rgba(0,0,0,0.8);
             color: #FFF;
