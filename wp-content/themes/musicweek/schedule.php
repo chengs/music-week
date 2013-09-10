@@ -55,6 +55,15 @@ $mw_event_format = <<< End
 {has_location}<br>@#_LOCATIONNAME{/has_location}
 </a>
 End;
+$mw_event_allday_format = <<< End
+<a href="#_EVENTURL" target="_blank" style="background:#_CATEGORYCOLOR;">
+<b style="font-size:14px;">#_CATEGORYNAME</b>
+<br>#_EVENTNAME
+<br>
+{has_location}<br>@#_LOCATIONNAME{/has_location}
+</a>
+End;
+$mw_allday_events = get_option( 'mw_allday_events', $default = false );
 ?>
     <div id="articleContainer" class="bodyContainer">
         <?php while (have_posts()) : the_post(); ?>
@@ -79,7 +88,16 @@ End;
                                     </tr>
                                 </thead>
                                 <tbody>
-                                
+                                    <?php if($mw_allday_events){ ?>
+                                    <tr>
+                                        <td class="week">全天</td>
+                                        <td colspan="7">
+                                            <?php
+                                                em_events(array('post_id'=>$mw_allday_events,'format_header'=>'','format'=>$mw_event_allday_format,'format_footer'=>''));
+                                            ?> 
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
                                     <tr>
                                         <td class="week">上午</td>
                                         <td>

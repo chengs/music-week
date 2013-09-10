@@ -57,6 +57,7 @@ class Wpd_General_Settings extends Wpd_Panel
         add_meta_box('mw_admin_static', '静态常量', array(&$this, 'meta_box'), $this->page_hook, 'normal');
         add_meta_box('mw_admin_index', '首页设定', array(&$this, 'meta_box'), $this->page_hook, 'normal');
         add_meta_box('mw_admin_old', '往届作品页面设定', array(&$this, 'meta_box'), $this->page_hook, 'normal');
+        add_meta_box( 'mw_admin_schedule', '活动页面设定',array(&$this,'meta_box'), $this->page_hook, 'normal' );
 //		add_meta_box( 'wpd-general-text-settings', __('单行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
 //		add_meta_box( 'wpd-general-textarea-settings', __('多行文本框', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
 //		add_meta_box( 'wpd-general-select-settings', __('下拉菜单选项', 'wpd'), array(&$this, 'meta_box'), $this->page_hook, 'normal');
@@ -120,6 +121,16 @@ class Wpd_General_Settings extends Wpd_Panel
                     'value' => '',
                     'class' => 'regular-text code'
                 ),
+            ),
+            'mw_admin_schedule'=> array(
+                array(
+                    'type' => 'text',
+                    'name' => 'mw_allday_events',
+                    'title' => '全天活动文章编号列表',
+                    'desc' => '内容为活动ID，英文逗号分隔',
+                    'value'=>'',
+                    'class'=>'regular-text code'
+                )
             ),
             'wpd-general-text-settings' => array(
 
