@@ -140,37 +140,37 @@ $mw_allday_events = get_option( 'mw_allday_events', $default = false );
                                         <td class="week">下午</td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-19','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-19','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?>                                            
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-20','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-20','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-21','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-21','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-22','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-22','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-23','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-23','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-24','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-24','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'12:00','end_before'=>'18:00','scope'=>'2013-10-25','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'12:00','end_before'=>'18:30','scope'=>'2013-10-25','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                     </tr>
@@ -178,37 +178,37 @@ $mw_allday_events = get_option( 'mw_allday_events', $default = false );
                                         <td class="week">晚上</td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-19','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-19','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-20','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-20','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-21','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-21','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-22','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-22','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-23','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-23','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-24','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-24','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                         <td>
                                             <?php
-                                                em_events(array('start_after'=>'18:00','end_before'=>'23:00','scope'=>'2013-10-25','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
+                                                em_events(array('start_after'=>'18:30','end_before'=>'23:00','scope'=>'2013-10-25','format_header'=>'','format'=>$mw_event_format,'format_footer'=>''));
                                             ?> 
                                         </td>
                                     </tr>
